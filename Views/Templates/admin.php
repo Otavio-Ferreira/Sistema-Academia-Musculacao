@@ -66,6 +66,12 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link link-body-emphasis  <?= (isset($viewData['nivel-1']) && $viewData['nivel-1'] == "Notificações") ? 'active text-white' : ''; ?><?= (isset($viewData['id_group']) && $viewData['id_group'] == 4) ? 'd-none' : ''; ?>" href="<?= BASE_URL . 'Notificacoes'; ?>">
+            <i class="bi bi-bell pe-none me-2"></i>
+            Notificações
+          </a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link link-body-emphasis  <?= (isset($viewData['nivel-1']) && $viewData['nivel-1'] == "PerfilAluno") ? 'active text-white' : ''; ?><?= (isset($viewData['id_group']) && $viewData['id_group'] == 3) ? 'd-none' : ''; ?>" aria-current="page" href="<?= BASE_URL . 'HomeAluno'; ?>">
             <i class="bi bi-person-circle pe-none me-2"></i>
             Perfil Aluno
@@ -184,7 +190,7 @@
             <a class="me-4 rounded-5 position-relative" data-bs-toggle="modal" data-bs-target="#modelNotf">
               <i class="bi bi-bell pe-none fs-2 text-secondary"></i>
               <span class="position-absolute bottom-0 start-100 translate-middle badge rounded-pill bg-danger">
-                <?= $viewData['total_notificacoes']['totalNotificacoes']?>
+                <?= $viewData['total_notificacoes']['totalNotificacoes'] ?>
                 <span class="visually-hidden">unread messages</span>
               </span>
             </a>
@@ -198,10 +204,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
-                    <?php foreach($viewData['list_notificacoes'] as $list_notf):?>
+                    <?php foreach ($viewData['list_notificacoes'] as $list_notf) : ?>
                       <div class="d-flex">
                         <div class="alert alert-danger fw-bold w-75" role="alert">
-                          A fatura de <?= $list_notf['name']?> desse mes esta pendente
+                          A fatura de <?= $list_notf['name'] ?> desse mes esta pendente
                         </div>
                         <div class="alert p-0 w-25 ms-2">
                           <a href="#" class="btn btn-danger fs-5 w-100 h-100 d-flex flex-wrap justify-content-center align-content-center">
@@ -210,7 +216,7 @@
                           </a>
                         </div>
                       </div>
-                    <?php endforeach;?>
+                    <?php endforeach; ?>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
