@@ -1,0 +1,13 @@
+.card-tr {
+    background-image: linear-gradient(135deg, #f8f9fa 70%, #ced4da 30%);
+    background-repeat: no-repeat;
+    width: 400px;
+    margin: 5px;
+}
+
+@media(max-width: 575px) {
+    .card-tr {
+        min-width: 100%;
+        margin: 5px;
+    }
+}

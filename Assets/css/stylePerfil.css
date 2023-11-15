@@ -1,0 +1,23 @@
+.div-1{
+    display: flex;
+}
+
+.i-pw{
+    width: 50px;
+}
+
+@media(max-width: 630px){
+    .div-i{
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    .editInfor{
+        width: 100%;
+        padding: 10px;
+    }
+    input{
+        width: 300px;
+    }
+}
