@@ -1,6 +1,6 @@
 <?php
 
-class Notificacoes extends Controller
+class NotificacoesController extends Controller
 {
 
 
@@ -44,3 +44,5 @@ class Notificacoes extends Controller
     $this->loadTemplateAdmin('Admin/Notificacoes/index', $this->data);
   }
 }
+
+?>

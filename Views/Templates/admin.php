@@ -66,7 +66,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link link-body-emphasis  <?= (isset($viewData['nivel-1']) && $viewData['nivel-1'] == "Notificações") ? 'active text-white' : ''; ?><?= (isset($viewData['id_group']) && $viewData['id_group'] == 4) ? 'd-none' : ''; ?>" href="<?= BASE_URL . 'Notificacoes'; ?>">
+          <a class="nav-link link-body-emphasis <?= (isset($viewData['nivel-1']) && $viewData['nivel-1'] == "Notificações") ? 'active text-white' : ''; ?><?= (isset($viewData['id_group']) && $viewData['id_group'] == 4) ? 'd-none' : ''; ?>" href="<?= BASE_URL . 'Notificacoes' ?>">
             <i class="bi bi-bell pe-none me-2"></i>
             Notificações
           </a>
